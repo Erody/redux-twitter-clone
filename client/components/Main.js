@@ -1,9 +1,12 @@
 import React from 'react';
+import Tweets from './Tweets';
 
 class Main extends React.Component {
 	render() {
 		return (
-			<h1>Test</h1>
+			<div className="wrap">
+				<Tweets/>
+			</div>
 		)
 	}
 }
