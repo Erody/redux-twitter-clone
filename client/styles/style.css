@@ -1,0 +1,9 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    border: #ff2d25 solid;
+}
+
+.tweet {
+    border: #42ff3a solid;
+}
