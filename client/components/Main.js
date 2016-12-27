@@ -4,10 +4,12 @@ import { Link } from 'react-router';
 class Main extends React.Component {
 	render() {
 		return (
-			<div className="logo">
-				<h1>
-					<Link to="/">Twitter</Link>
-				</h1>
+			<div>
+				<div className="logo">
+					<h1>
+						<Link to="/">Twitter</Link>
+					</h1>
+				</div>
 				<div>
 					{React.cloneElement(this.props.children, this.props)}
 				</div>

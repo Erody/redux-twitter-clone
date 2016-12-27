@@ -6,12 +6,13 @@ import { browserHistory } from 'react-router';
 import rootReducer from './reducers/index';
 
 import tweets from '../../get_tweets/tweets';
+import comments from '../../get_tweets/replies';
 
 // create an object for the default data
 
 const defaultState = {
 	tweets,
-	replies: [],
+	comments,
 };
 
 const store = createStore(rootReducer, defaultState);

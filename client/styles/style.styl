@@ -1,24 +1,24 @@
 body
     background #e7f3ff
 
-.wrap
-    display flex
-    flex-direction column
-
 .tweets
     display flex
     flex-direction column
     align-items center
-    justify-content center
+    justify-content space-around
     flex-basis calc(33.333% - 4rem)
 
 .tweet
     display flex
-    justify-content space-between
     flex-grow 1
+    flex-basis 0
+    justify-content space-between
+    align-content center
     padding 10px
     background white
     border #e7f3ff .5px solid
+    min-height 150px
+    min-width 800px
     max-width 800px
 
 .buttons
@@ -44,3 +44,6 @@ body
     font-family "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif
     font-size 14px
     font-weight bold
+
+.logo h1
+    text-align center
