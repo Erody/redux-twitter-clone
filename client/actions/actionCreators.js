@@ -20,11 +20,10 @@ export function incrementLikes(index) {
 // comments
 
 // add reply to tweet
-export function addReply(id, author, comment) {
+export function addReply(id, comment) {
 	return {
 		type: 'ADD_REPLY',
 		id,
-		author,
 		comment,
 	}
 }
