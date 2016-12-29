@@ -7,7 +7,7 @@ class Main extends React.Component {
 			<div>
 				<div className="logo">
 					<h1>
-						<Link to="/">Twitter</Link>
+						<Link className="logoLink" to="/">Redux-Twitter</Link>
 					</h1>
 				</div>
 				<div>

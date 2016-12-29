@@ -17,7 +17,7 @@ class Single extends React.Component {
 		return (
 			<div className="tweets">
 				<Tweet {...this.props} index={this.getTweetIndex()}/>
-				<Compose/>
+				<Compose  {...this.props} />
 				<div className="replies">
 					{this.props.comments[this.props.params.tweetId].map((reply, index) => <Reply {...this.props} index={index} key={index} reply={reply} />)}
 				</div>
