@@ -1,18 +1,7 @@
 **TODO**
 
-- start developing (rewatch the redux tutorial by wes bos and develop this app alongside)
-- how the state is gonna look: 
-    - statuses
-        - name
-        - username
-        - text
-        - imageUrl
-        - tweetId (passed down to replies)
-        
-    - replies
-        - name
-        - text
-        - imageUrl
-        - username
-        
-    maybe just make replies part of statuses.
+- Add remove option to comments and tweets
+- Get random pictures for the replies
+- Add ability to compose tweets
+- Give the option to sign in (firebase: with google) 
+    - post tweets and comments as logged in user (instead of anonymous)
