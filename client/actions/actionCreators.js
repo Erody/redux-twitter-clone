@@ -1,10 +1,23 @@
+// tweets
+
 // retweet count up by 1
-export function incrementRetweetCoung(id) {
+export function incrementRetweets(index) {
 	return {
 		type: 'INCREMENT_RETWEETS',
-		id,
+		index,
 	}
 }
+// increment likes
+export function incrementLikes(index) {
+	return {
+		type: 'INCREMENT_LIKES',
+		index,
+	}
+}
+
+
+
+// comments
 
 // add reply to tweet
 export function addReply(id, author, comment) {

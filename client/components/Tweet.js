@@ -13,8 +13,21 @@ class Tweet extends React.Component {
 					<p className="text">{tweet.text}</p>
 				</blockquote>
 				<div className="buttons">
-					<a href="/">Retweet</a>
-					<Link to={`/view/${tweet.id}`}>Reply</Link>
+					<div className="button">
+						<span className="count">{tweet.retweet_count}</span>
+						<span className="fa fa-retweet clickable" onClick={this.props.incrementRetweets.bind(null, index)} />
+					</div>
+
+					<div className="button">
+						<span className="count">{tweet.favorite_count}</span>
+						<span className="fa fa-heart clickable" onClick={this.props.incrementLikes.bind(null, index)} />
+					</div>
+
+					<div className="button">
+						<Link to={`/view/${tweet.id}`}>
+							<span className="fa fa-reply clickable" />
+						</Link>
+					</div>
 				</div>
 			</div>
 		)

@@ -2,6 +2,7 @@ import React from 'react';
 import replies from '../../../get_tweets/replies';
 import Reply from './Reply';
 import Tweet from './Tweet';
+import Compose from './Compose';
 
 class Single extends React.Component {
 	constructor() {
@@ -14,11 +15,12 @@ class Single extends React.Component {
 	}
 	render() {
 		return (
-			<div className="test">
+			<div className="tweets">
 				<Tweet {...this.props} index={this.getTweetIndex()}/>
-				<ul>
+				<Compose/>
+				<div className="replies">
 					{replies[this.props.params.tweetId].map((reply, index) => <Reply {...this.props} index={index} key={index} reply={reply} />)}
-				</ul>
+				</div>
 			</div>
 		)
 	}

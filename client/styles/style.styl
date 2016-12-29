@@ -24,8 +24,27 @@ body
 .buttons
     display flex
     flex-direction column
+    min-width 70px
+    text-align right
 
+.button span.clickable
+    margin 10px
+    color #94949d
+    cursor pointer
 
+.button span.clickable:hover
+    color #09102f
+    transform scale(2,2)
+    cursor pointer
+
+.button span.clickable:active
+    transform skewX(1deg)
+
+.button
+    flex 1
+
+.count
+    color #94949d
 
 .imageUrl
     border-radius 15%
@@ -47,3 +66,20 @@ body
 
 .logo h1
     text-align center
+
+.compose
+    display flex
+
+
+.compose input
+    min-width 800px
+    margin 2px
+    padding 12px 20px
+    box-sizing border-box
+    outline none
+    transition 0.5s
+    resize none
+    border solid 5px #c9c9c9
+
+.compose input:focus
+    border solid 5px #969696
