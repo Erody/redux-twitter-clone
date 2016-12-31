@@ -29,7 +29,16 @@ module.exports = {
       test: /\.styl$/,
       include: path.join(__dirname, 'client'),
       loader: 'style-loader!css-loader!stylus-loader'
-    }
+    },
+    // images
+	{
+		test: /\.(jpe?g|png|gif|svg)$/i,
+		include: path.join(__dirname, 'client'),
+		loaders: [
+			'file?hash=sha512&digest=hex&name=[hash].[ext]',
+			'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+		]
+	}
     ]
   }
 };
